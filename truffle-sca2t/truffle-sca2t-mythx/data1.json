@@ -314,6 +314,7 @@
         }
       }
     },
+    "mainSource": "/mnt/c/workdir/vscode_project/truffle-sca2t-test/contracts/A.sol",
     "verion": "0.5.2+commit.1df8f40c.Emscripten.clang",
     "analysisMode": "quick"
   },
