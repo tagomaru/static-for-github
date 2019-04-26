@@ -1,14 +1,32 @@
-# Audit Report
+# truffle-sca2t-test Audit Report
+- [1 Overview](#1-overview)
+  * [1.1 Audit Details](#11-audit-details)
+  * [1.2 Number of vulnerabilities per severity](#12-number-of-vulnerabilities-per-severity)
+- [2 Report | lib/vulnerablemath.sol: vulnerablemath](#2-report--libvulnerablemathsol-vulnerablemath)
+  * [2.1 The binary addition can overflow. (High :scream:)](#21-the-binary-addition-can-overflow-high-scream)
+  * [2.2 A floating pragma is set. (Medium :fearful:)](#22-a-floating-pragma-is-set-medium-fearful)
+- [3 Report | MetaCoin.sol: MetaCoin](#3-report--metacoinsol-metacoin)
+  * [3.1 Use of tx.origin is deprecated. (Medium :fearful:)](#31-use-of-txorigin-is-deprecated-medium-fearful)
+  * [3.2 Multiple sends are executed in one transaction. (Medium :fearful:)](#32-multiple-sends-are-executed-in-one-transaction-medium-fearful)
+- [4 Report | origin.sol: Origin](#4-report--originsol-origin)
+  * [4.1 Use of tx.origin is deprecated. (Medium :fearful:)](#41-use-of-txorigin-is-deprecated-medium-fearful)
+  * [4.2 Use of tx.origin is deprecated. (Medium :fearful:)](#42-use-of-txorigin-is-deprecated-medium-fearful)
+
 ## 1 Overview
-#### 1.1 Audit Details
+### 1.1 Audit Details
 * **Project Name:** truffle-sca2t-test
 * **Tools:** [MythX](https://mythx.io/)
 
+### 1.2 Number of vulnerabilities per severity
+|  High  |  Medium  |
+| :---: | :---: |
+|  1  |  5  |
 
-## 2. Report | lib/vulnerablemath.sol: vulnerablemath
-#### MythX Error 
+
+## 2 Report | lib/vulnerablemath.sol: vulnerablemath
+* **MythX Error:**  
 N/A  
-#### MythX Log
+* **MythX Log:**  
 N/A  
   
 ### 2.1 The binary addition can overflow. (High :scream:)
@@ -43,10 +61,10 @@ pragma solidity ^0.5.0;
 ```
 
 
-## 3. Report | MetaCoin.sol: MetaCoin
-#### MythX Error 
+## 3 Report | MetaCoin.sol: MetaCoin
+* **MythX Error:**  
 N/A  
-#### MythX Log
+* **MythX Log:**  
 N/A  
   
 ### 3.1 Use of tx.origin is deprecated. (Medium :fearful:)
@@ -89,10 +107,10 @@ function getBalanceInEth(address addr) public view returns(uint){
 ```
 
 
-## 4. Report | origin.sol: Origin
-#### MythX Error 
+## 4 Report | origin.sol: Origin
+* **MythX Error:**  
 N/A  
-#### MythX Log
+* **MythX Log:**  
 N/A  
   
 ### 4.1 Use of tx.origin is deprecated. (Medium :fearful:)
@@ -131,4 +149,4 @@ tx.origin
  
 
 ***
-powered by [truffle-sca2t](https://github.com/tagomaru/truffle-sca2t)
+***Powered By [truffle-sca2t](https://github.com/tagomaru/truffle-sca2t)***
